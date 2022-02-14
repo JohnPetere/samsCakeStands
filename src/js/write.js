@@ -1,6 +1,6 @@
 import { ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
 import {ref as databaseRef, push, set, get, remove} from 'firebase/database'
-import { db, storage  } from "./libs/firebase/firebaseConfig";
+import { db, storage  } from "./libs/firebase/firebaseConfid-old";
 
 document.querySelector("#cakeStandImgInput").addEventListener("change", onImageSelected);
 document.forms["cakeStandAddEditForm"].addEventListener("submit", onSubmitCakeStand); 
