@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="msapplication-TileColor" content="#c8112e" />
+    <meta name="theme-color" content="#c8112e" />
+    <meta
+      name="description"
+      content="Jim Hortons Client Side Development Starter Kit for junior developers looking for an easy way to get started with es module builds."
+    />
+    <title>Add or Edit Cake Stand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"> 
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+ 
+
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/write.js"></script>
+    <script type="moudle" src="js/side-bar.js"></script>
+  </head>
+  <body class="bg-white">
+    
+    <header class="flex-col">
+      <nav class="flex items-center justify-between flex-wrap bg-aeroBlue p-6 ">
+        <div class="flex items-center flex-shrink-0 text-fieryRose mr-6 hover:text-darkPurple">
+          <img src="static/svg/branding/cake-logo.svg" class="object-contain  h-10 w-10 mx-3  ">
+  
+          <a  href="index.html"class="font-bold text-2xl sm:text-2xl font-dancingScript ">Sams Cake Stand</a>
+         
+        </div>
+        <div class=" bg-aeroBlue flex justify-between md:hidden">
+          <!-- logo -->
+          
+        
+          <!-- mobile menu button -->
+          <button class="mobile-menu-button p-2 focus:outline-none ">
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      
+      </nav>
+<!-- mobile menu bar -->
+
+
+    </header>
+    <!-- NAV BAR BASED ON : https://codepen.io/bradtraversy/pen/JgXqBL -->
+ 
+  <!-- THIS USED AS TEMPLATE FOR SIDE BAR: 
+  https://codepen.io/chris__sev/pen/RwKWXpJ -->
+  <div class="relative min-h-screen md:flex">
+
+    
+    <!-- sidebar -->
+    <div class="sidebar text-cadet bg-isabelline text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+  
+  
+  
+      <!-- nav -->
+      <nav class="">
+        
+          <a href="index.html" class=" block py-2.5 px-4 hover:text-darkPurple  ">
+            <img src="static/svg/icons/inventory-icon.svg" class=" inline object-contain h-7 w-7 mx-2" alt="">
+             Inventory 
+            
+           </a>
+        
+       
+        <a href="write.html" class="block py-2.5 px-4  hover:bg-blue-700 hover:text-darkPurple ">
+          <img src="static/svg/icons/add-icon.svg" class=" inline object-contain h-7 w-7 mx-2" alt="">
+          Add a cake
+        </a>
+        <a href="" class="block py-2.5 px-4  hover:bg-blue-700 hover:text-darkPurple ">
+          <img src="static/svg/icons/report-icon.svg" class=" inline object-contain h-7 w-7 mx-2" alt="">
+         Sales Reports
+        </a>
+        <a href="" class="block py-2.5 px-4 0 hover:bg-blue-700 hover:text-darkPurple ">
+          <img src="static/svg/icons/customer-profile-icon.svg" class=" inline object-contain h-7 w-7 mx-2" alt="">
+          Customers
+        </a>
+      </nav>
+    </div>
+    <!-- GRID GENERATED: https://tailwindgrids.com/#/ -->
+    <!-- content -->
+    <div class="flex flex-wrap  overflow-hidden sm:-mx-0 md:-mx-0 lg:-mx-2 xl:-mx-1">
+    
+            <form action="" id="cakeStandAddEditForm" class="
+              p-5
+              mx-10
+              mt-10 
+              sm:mx-0
+              md:mx-10
+              sm:p-0;
+              
+              text-cadet
+                bg-white bg-clip-padding
+                border border-solid border-cadet ">
+                
+              <div class="mx-10 mb-3 md:w-22 w-23 md:mx-0  ">
+                <img src="static/svg/branding/cake-logo.svg" id="cakeStandImg" class="w-full h-full" alt=""/> 
+                <label for="cakeStandImgInput" class="form-label inline-block mb-2 text-cadet">Select Cake Stand Image</label>
+                <input required name="cakeStandImgInput" id="cakeStandImgInput"  accept=".jpg, .png, .jpeg, .webp" class="form-control
+                block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="cakeStandImg">
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-0">
+                <div class="w-full md:w-full px-3 mb-2 md:mb-0">
+                  <label class="block uppercase tracking-wide text-fieryRose text-xs font-bold mb-2" for="grid-first-name">
+                  Product Title
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" 
+                  id="productTitle" type="text" placeholder="large Cake Stand" required>
+                  
+                </div>
+              
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-0">
+                <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
+                  <label class="block uppercase tracking-wide text-fieryRose text-xs font-bold mb-2" for="grid-first-name">
+                  Price
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" 
+                  id="standPrice" type="number" placeholder="12.34" required>
+                  
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                  <label class="block uppercase tracking-wide text-fieryRose text-xs font-bold mb-2" for="grid-last-name" >
+                  Stand Radius (in)
+                  </label>
+                  <input class="appearance-none block w-full bg-gray-200 text-cadet border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                  id="standRadius" type="number" placeholder="12.34" required>
+                </div>
+              </div>
+              <div class="inline-flex my-2 mx-0" >
+                <button id="buy-button" type="submit" class="bg-aeroBlue  text-darkPurple font-bold py-3 px-10 mt-3 rounded-full">
+                  Add/Save
+                  <!-- Change this when it is being edited or deleted.. -->
+                </button>
+             
+                <button id="delete-button" class="caret-cadet  text-darkPurple font-bold py-3 px-10 mt-3 rounded-full">
+                 Cancel
+                </button>
+                
+              </div>
+            </form>
+      </div>
+    
+    </div>
+  </div>
+
+  </body>
+</html>
+ <!--  <img src="static/svg/branding/cake-logo.svg" alt=""/>
+      <div class="mb-3 w-96">
+        <label for="formFile" class="form-label inline-block mb-2 text-gray-700">Default file input example</label>
+        <input class="form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file" id="formFile">
+      </div> -->

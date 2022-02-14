@@ -1,0 +1,15 @@
+
+{
+    "shop-item": {
+      "-MuBYwRNh8urhG5Cabvd": {
+        "key": "MuBYwRNh8urhG5Cabvd",
+        "sku": "unique product sku",
+        "image": "product-url",
+        "title": "product title",
+        "price": "product pr",
+        "radius": "your custom property"
+        }
+      }
+}
+
+
