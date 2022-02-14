@@ -21,8 +21,6 @@ const firebaseConfig = {
 
   authDomain: "store-front-a5e2e.firebaseapp.com",
 
-  databaseURL: "https://store-front-a5e2e-default-rtdb.firebaseio.com",
-
   projectId: "store-front-a5e2e",
 
   storageBucket: "store-front-a5e2e.appspot.com",
@@ -32,7 +30,6 @@ const firebaseConfig = {
   appId: "1:986885668446:web:76f3e3e313f58a33c93ecf",
 
   measurementId: "G-Q5XP28ZLS8"
-
 
 };
 
