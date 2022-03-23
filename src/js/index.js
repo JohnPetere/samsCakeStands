@@ -17,6 +17,7 @@ async function pageStart(){
     const data = cakeStandsSnapShot.val();
     console.log(data)
     document.querySelector('#delete');
+    console.log(data)
     const addCakeStands = function(){
         const cards = Object.values(data).map(cakeStand=>{
     
